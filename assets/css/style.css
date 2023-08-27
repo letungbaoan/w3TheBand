@@ -13,13 +13,27 @@ html {
 }
 
 #header {
+    width: 100%;
     height: 46.5px;
     background-color: black;
-    position: sticky;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#nav {
+    display: inline-block;
 }
 
 #nav, .subnav {
     list-style: none;
+}
+
+#nav .nav-arrow-down {
+    font: 14px;
 }
 
 #nav li {
@@ -63,13 +77,33 @@ html {
     line-height: 38px;
 }
 
+#header .search-button-header {
+    float: right;
+    padding: 0 24px;
+    transition: .25s;
+}
+
+#header .search-button-header:hover {
+    background-color: red;
+}
+
+#header .search-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46.5px;
+    display: inline-block;
+}
+
 #slider {
     min-height: 500px;
-    background-color: #fff;
+    width: 100%;
+    background-color: green;
+    margin-top: 46.5px;
 }
 
 #content {
-
+    height: 2000px;
+    background-color: #ccc;
 }
 #footer {
     
