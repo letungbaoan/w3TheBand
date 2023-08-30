@@ -22,6 +22,7 @@ html {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 
 #nav {
@@ -95,16 +96,94 @@ html {
 }
 
 #slider {
-    min-height: 500px;
-    width: 100%;
-    background-color: green;
+    padding-top: 50%;
+    position: relative;
     margin-top: 46.5px;
+    background: url('/assets/img/slider/slider1.jpg') top center / cover no-repeat;
 }
 
-#content {
-    height: 2000px;
-    background-color: #ccc;
+#slider .text-content {
+    position: absolute;
+    color: white;
+    bottom: 47px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
 }
+
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+    margin: 10px;
+}
+
+#slider .text-description {
+    margin: 15px;
+    font-size: 15px;
+}
+
+
+#content {
+    z-index: -1;
+}
+
+#content .content-section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+}
+
+#content .section-heading {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px 0;
+    letter-spacing: 10px;
+}
+
+#content .section-subheading {
+    font-size: 15px;
+    margin: 15px 0;
+    font-style: italic;
+    opacity: 0.5;
+}
+
+#content .section-heading,
+#content .section-subheading {
+    text-align: center;
+}
+
+#content .about {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+#content .member-list {
+    padding: 32px;
+}
+
+#content .member-contain {
+    float: left;
+    text-align: center;
+    width: 33.333%;
+}
+
+#content .member-name {
+    margin: 15px;
+}
+
+#content .member-img {
+    border-radius: 4px;
+    width: 154px;
+}
+
+.clear  {
+    clear: both;
+}
+
 #footer {
     
 }
