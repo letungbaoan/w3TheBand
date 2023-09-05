@@ -172,9 +172,11 @@ html {
 
 #content .content-section {
     width: 800px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 64px 16px 112px;
+    padding-left: 16px;
 }
 
 #content .section-heading {
