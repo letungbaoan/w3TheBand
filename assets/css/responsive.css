@@ -1,9 +1,48 @@
 @media (max-width: 740px) {
+    #header {
+        overflow: hidden;
+    }
+    
+    #nav {
+        display: block;
+        width: 100%;
+    }
+
+    #nav .subnav {
+        position: initial;
+        display: none;
+        background-color: #333;
+    }
+
+    #nav li:hover .subnav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #nav li a {
+        padding: 1px 24px;
+    }
+
+    #nav .subnav a {
+        color: white;
+        padding: 5px 41px;
+    }
+
     #nav > li {
         display: block;
+    }
+
+    #nav > li:first-child {
+        display: inline-block;
     }
 
     #header .search-button-header {
         display: none;
     }
+
+    #header .mobile-menu-btn
+    {
+        display: block;
+    }
+
 }

@@ -66,15 +66,10 @@ html {
     left: 0;
     right: 0;
     z-index: 1;
-    overflow: hidden;
 }
 
 #nav {
     display: inline-block;
-}
-
-#nav, .subnav {
-    list-style: none;
 }
 
 #nav .nav-arrow-down {
@@ -122,6 +117,13 @@ html {
     line-height: 38px;
 }
 
+#header .mobile-menu-btn
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
 
 #header .mobile-menu-btn,
 #header .search-button-header {
